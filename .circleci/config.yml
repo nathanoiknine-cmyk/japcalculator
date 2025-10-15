@@ -24,6 +24,8 @@ jobs:
 
       # run tests!
       - run: npm run test
+      - run: npm audit
+      - run npm audit fix
       - run: npm run build
 
 workflows:
